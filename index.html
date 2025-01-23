@@ -1,7 +1,33 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+    <head>
+        <title>My GitHub Homepage</title>
+        <link href="./styles/style.css" type="text/css" rel="stylesheet" />
+    </head>
+
     <body>
-        <h1>Hello World</h1>
-        <p>I'm hosted with GitHub Pages.</p>
+        <div class="container">
+            <div class="box" id="header">My GitHub Homepage</div>
+            <div class="box" id="nav">
+                <a id="navbox" href="index.html">Homepage</a>
+                <a id="navbox" href="/Personal-Website">Personal Website</a>
+                <a id="navbox" href="portfolio.html">Project Portfolio</a>
+            </div>
+            <div id="leftbar"></div>
+            <div id="rightbar"></div>
+            <div id="content">
+                <h1>Welcome to my GitHub Homepage!</h1>
+                <p>
+                </p>
+            </div>
+            <div class="box" id="footer">Website extended from my Web Development Project</div>
+        </div>
+        <script>
+            let fruits = ["an apple", "a banana", "an orange", "a blueberry"];
+            let randNum = Math.floor(Math.random() * 100);
+
+            document.getElementById("fruitName").innerHTML = fruits[randNum % fruits.length];
+            document.getElementById("randNumber").innerHTML = randNum;
+        </script>
     </body>
 </html>
